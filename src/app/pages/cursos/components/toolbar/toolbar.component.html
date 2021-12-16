@@ -1,0 +1,67 @@
+<p-toolbar>
+    <div class="p-toolbar-group-left">
+        <p-button type="button" label="Agregar" icon="pi pi-plus" class="p-mr-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"></p-button>
+        
+    </div>
+</p-toolbar>
+
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@mdo" (click)="editar(c)">
+                                Editar
+                            </button> -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{accion}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="span3">
+                    <h2>Ingrese un Curso</h2>
+                    <form class="" method="post" [formGroup]='formularioCurso' (ngSubmit)="guardarCurso()">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input formControlName='nombre' type="text" class="form-control" name="name" id="name"
+                                    placeholder="Ingrese nombre del curso" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Descripción</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope fa"
+                                        aria-hidden="true"></i></span>
+                                <input formControlName='descripcion' type="text" class="form-control" name="email"
+                                    placeholder="Ingrese Descripción" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">Precio</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                <input formControlName='precio' type="text" class="form-control" name="price" placeholder="Ingrese el Precio">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Seleccionar imagen</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"
+                    (click)="guardarCurso()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

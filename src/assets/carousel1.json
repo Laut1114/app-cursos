@@ -1,0 +1,29 @@
+{
+	"data": [
+		{	
+			"image":"assets/images/cursoAngular.jpg",
+			"name":"Curso de Angular",
+			"price":"$4000"
+		},
+		{
+			"image":"assets/images/cKotlin.jpg",
+			"name":"Curso de Kotlin",
+			"price":"$4500"
+		},
+		{
+			"image":"assets/images/cPython.jpg",
+			"name":"Curso de Python",
+			"price":"$5000"
+		},
+        {
+			"image":"assets/images/cFirebase.jpg",
+			"name":"Curso de Firebase",
+			"price":"$2500"
+		},
+		{
+			"image":"assets/images/cNode.jpg",
+			"name":"Curso de Node.js",
+			"price":"$4200"
+		}
+    ]
+}

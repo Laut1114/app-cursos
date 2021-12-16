@@ -1,0 +1,21 @@
+.container-fluid {
+    height: 60px;
+}
+
+.navbar-brand {
+    margin: 20px;
+    margin-right: 60px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.dropdown-item {
+    text-align: center;
+}
+
+#quit :hover {
+    background-color: rgb(202, 0, 0);
+    color: #fff;
+}

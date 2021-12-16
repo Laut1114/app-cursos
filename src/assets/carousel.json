@@ -1,0 +1,53 @@
+{
+	"data": [
+		{	
+			"codigo":"jjh453j534",
+			"imagen":"assets/images/cursoAngular.jpg",
+			"nombre":"Curso de Angular",
+			"precio":"$4000",
+			"descripcion":"Curso para principiantes de Angular"
+		},
+		{
+			"codigo":"78gfk453e",
+			"imagen":"assets/images/cKotlin.jpg",
+			"nombre":"Curso de Kotlin",
+			"precio":"$4500",
+			"descripcion":"Curso para principiantes de Kotlin"
+		},
+		{
+			"codigo":"936088bc1",
+			"imagen":"assets/images/cPython.jpg",
+			"nombre":"Curso de Python",
+			"precio":"$5000",
+			"descripcion":"Curso para principiantes de Python"
+		},
+		{
+			"codigo":"f9e1561pd",
+			"imagen":"assets/images/cFirebase.jpg",
+			"nombre":"Curso de Firebase",
+			"precio":"$2500",
+			"descripcion":"Curso para principiantes de Firebase"
+		},
+		{
+			"codigo":"1077f9ed7",
+			"imagen":"assets/images/cNode.jpg",
+			"nombre":"Curso de Node.js",
+			"precio":"$4200",
+			"descripcion":"Curso para principiantes de Node.js"
+		},
+		{
+			"codigo":"3e71bc0c8",
+			"imagen":"assets/images/cPost.jpg",
+			"nombre":"Curso de PostgreSQL",
+			"precio":"$4500",
+			"descripcion":"Curso para principiantes de PostgreSQL"
+		},
+		{
+			"codigo":"7cebb3c3d",
+			"imagen":"assets/images/cTypescript.jpg",
+			"nombre":"Curso de TypeScript",
+			"precio":"$1500",
+			"descripcion":"Curso para principiantes de TypeScript"
+		}
+	]
+}

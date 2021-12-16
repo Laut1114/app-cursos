@@ -1,0 +1,65 @@
+<p-card>
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th class="td-actions">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of cursos">
+        <td>{{ c.nombre }}</td>
+        <td>{{ c.descripcion }}</td>
+        <td id="precio">{{ c.precio }}</td>
+        <td class="td-actions">
+          <p-button
+            type="button"
+            label="Editar"
+            icon="pi pi-pencil"
+            id="buttonSpace"
+            styleClass="p-button-warning"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+            (click)="update(c)"
+          ></p-button>
+          <p-button
+            icon="pi pi-times"
+            id="buttonSpace"
+            styleClass="p-button-danger"
+            (click)="delete(c.id)"
+          ></p-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p-card>
+
+
+
+
+<!-- <ng-template pTemplate="header">
+      <h3 style="margin-left: 25px;">Cursos diponibles</h3>
+  </ng-template>
+  <p-table [columns]="cols" [value]="cursos">
+      <ng-template pTemplate="header" let-columns>
+          <tr>
+              <th *ngFor="let col of columns">
+                  {{col.header}}
+              </th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+              <td *ngFor="let col of columns">
+                  {{rowData[col.field]}}
+                  
+              </td>
+              <div class="p-toolbar-group-right">
+                  <p-button icon="pi pi-times" id="buttonSpace" styleClass="p-button-danger" (click)="delete(cursos.id)"></p-button>
+              </div>
+          </tr>
+      </ng-template>
+  </p-table> -->
